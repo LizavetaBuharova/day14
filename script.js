@@ -33,9 +33,18 @@ console.log(
   countSheeps([undefined, null, false, true, true, false, null, undefined])
 );
 
-//
+//Числа в массив в обратном порядке
 let t = 12356;
 function digitize(n) {
   return String(n).split("").map(Number).reverse();
 }
 console.log(digitize(t));
+
+//Возвращаемая строка из первых символов
+let st = "sees eyes xray yoat";
+function makeString(s) {
+  let str = "";
+  s.split(" ").forEach((el) => (str += el[0]));
+  return str;
+}
+console.log(makeString(st));
